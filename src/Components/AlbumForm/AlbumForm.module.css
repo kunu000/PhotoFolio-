@@ -1,0 +1,139 @@
+/* Album form section */
+.album_form {
+  width: 40%;
+  margin: 40px auto;
+  padding: 20px 25px;
+  border-radius: 25px;
+  background-color: rgb(243, 237, 237);
+  box-shadow: 0px 0px 15px rgb(80, 80, 80);
+  box-sizing: border-box;
+}
+
+/* Album form heading */
+.album_form_heading {
+  margin: 7px 0px 20px 0px !important;
+  color: rgb(53, 50, 50);
+  font-size: 30px;
+}
+
+/* Album input */
+.album_form input {
+  margin: 7px 0px;
+  padding: 8px 15px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  width: 100%;
+  font-size: 17px;
+  box-sizing: border-box;
+}
+
+/* Create button */
+#create_btn {
+  padding: 6px 12px;
+  margin: 0px 15px 0px 0px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(33, 177, 233);
+  box-shadow: 0 0 7px rgb(87, 83, 83);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+#create_btn:hover {
+  transform: scale(1.1);
+}
+
+/* Clear button */
+#clear_btn {
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(247, 37, 37);
+  box-shadow: 0 0 7px rgb(87, 83, 83);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 25px;
+}
+#clear_btn:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive css */
+@media only screen and (max-width: 950px) {
+  /* Album form section */
+  .album_form {
+    width: 60%;
+  }
+  /* Album form heading */
+  .album_form_heading {
+    font-size: 24px !important;
+  }
+  /* Album input */
+  .album_form input {
+    font-size: 16px;
+    padding: 5px 12px;
+  }
+  /* Create button */
+  #create_btn {
+    font-size: 16px;
+  }
+  /* Clear button */
+  #clear_btn {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  /* Album form section */
+  .album_form {
+    width: 72%;
+    min-width: 280px;
+  }
+  /* Album form heading */
+  .album_form_heading {
+    font-size: 24px !important;
+  }
+  /* Album input */
+  .album_form input {
+    font-size: 16px;
+    padding: 5px 12px;
+  }
+  /* Create button */
+  #create_btn {
+    font-size: 16px;
+  }
+  /* Clear button */
+  #clear_btn {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  /* Album form section */
+  .album_form {
+    width: 90%;
+  }
+
+  /* notification */
+  .toast_notification {
+    width: 250px;
+    margin: 10px 0px 10px 60px;
+  }
+}
+@media only screen and (max-width: 440px) {
+  /* notification */
+  .toast_notification {
+    width: 250px;
+    margin: 10px 0px 10px 120px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  /* notification */
+  .toast_notification {
+    width: 250px;
+    margin: 10px 0px 10px 90px;
+  }
+}

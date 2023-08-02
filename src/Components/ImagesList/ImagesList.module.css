@@ -1,0 +1,283 @@
+/* Images List */
+.ImagesList {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+/* Cancel button */
+#cancel_img_btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  cursor: pointer;
+}
+#cancel_img_btn:hover {
+  transform: scale(1.2);
+}
+
+/* Add button */
+#add_img_btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  cursor: pointer;
+}
+#add_img_btn:hover {
+  transform: scale(1.2);
+}
+
+/* header section */
+.header {
+  width: 90%;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* previous button */
+#previous_btn {
+  height: 55px;
+  width: 55px;
+  cursor: pointer;
+}
+#previous_btn:hover {
+  transform: scale(1.1);
+}
+
+/* Image list Title */
+#images_list_title {
+  margin-left: 30px;
+  color: rgb(41, 39, 39);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Container for Image list */
+.images_list_container {
+  width: 90%;
+  margin-top: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+/* Image folder */
+.image_folder {
+  width: 200px;
+  height: 190px;
+  margin: 0px 15px 45px 15px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 2px rgb(53, 51, 51) inset;
+  box-sizing: border-box;
+  padding: 0px;
+  background-color: rgb(243, 237, 237);
+  transition: opacity 0.15s linear;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+}
+/* Folder image */
+.image_folder img {
+  height: 150px;
+  width: 100%;
+  border-radius: 4px 4px 0px 0px;
+}
+.image_folder:hover img {
+  opacity: 0.85;
+}
+
+/* Folder title */
+.image_folder h3 {
+  color: rgb(40, 38, 38);
+  text-align: center;
+  margin: 0;
+  line-height: 30px;
+  padding: 0px 7px;
+  font-size: 17px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.image_folder:hover #bin_btn,
+.image_folder:hover #edit_btn,
+.image_folder:hover #download_btn {
+  visibility: visible;
+  opacity: 1;
+  top: -20px;
+}
+
+/* Delete button */
+#bin_btn {
+  opacity: 0;
+  visibility: hidden;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  position: absolute;
+  top: -40px;
+  right: 0px;
+  transition: all 0.08s;
+  cursor: pointer;
+}
+#bin_btn:hover {
+  transform: scale(1.2);
+}
+#bin_btn:active {
+  opacity: 0.6;
+}
+
+/* Edit button */
+#edit_btn {
+  visibility: hidden;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  position: absolute;
+  top: -40px;
+  right: 40px;
+  transition: all 0.08s;
+  cursor: pointer;
+}
+#edit_btn:hover {
+  transform: scale(1.2);
+}
+#edit_btn:active {
+  opacity: 0.6;
+}
+
+/* Download button */
+#download_btn {
+  visibility: hidden;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  position: absolute;
+  top: -40px;
+  right: 80px;
+  transition: all 0.08s;
+  cursor: pointer;
+}
+#download_btn img {
+  width: 34px;
+  height: 34px;
+  opacity: 1;
+}
+#download_btn :hover {
+  transform: scale(1.2);
+}
+#download_btn :active {
+  opacity: 0.6;
+}
+
+/* No image */
+.no_image {
+  font-size: 30px;
+  color: rgb(187, 186, 186);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  white-space: nowrap;
+}
+
+/* Responsive css */
+@media only screen and (max-width: 950px) {
+  /* Image list Title */
+  #images_list_title {
+    max-width: 480px;
+  }
+  /* Cancel button */
+  #cancel_img_btn {
+    top: 90px;
+    right: 80px;
+  }
+
+  /* Add button */
+  #add_img_btn {
+    top: 90px;
+    right: 80px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  /* Image list Title */
+  #images_list_title {
+    max-width: 340px;
+  }
+  /* header section */
+  .header {
+    width: 100%;
+  }
+  /* Previous button */
+  #previous_btn {
+    height: 45px;
+    width: 45px;
+  }
+  /* Image list title */
+  #images_list_title {
+    font-size: 22px;
+    margin-left: 20px;
+  }
+  /* Cancel button */
+  #cancel_img_btn {
+    width: 40px;
+    height: 40px;
+    top: 90px;
+    right: 50px;
+  }
+  /* Add button */
+  #add_img_btn {
+    width: 40px;
+    height: 40px;
+    top: 90px;
+    right: 50px;
+  }
+  /* Container for Image list */
+  .images_list_container {
+    width: 100%;
+  }
+  /* No image */
+  .no_image {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  /* Image list */
+  .ImagesList {
+    padding: 20px;
+  }
+  /* Image list Title */
+  #images_list_title {
+    max-width: 240px;
+  }
+  /* Cancel button */
+  #cancel_img_btn {
+    top: 130px;
+    right: 20px;
+  }
+  /* Add button */
+  #add_img_btn {
+    top: 130px;
+    right: 20px;
+  }
+  /* No image */
+  .no_image {
+    font-size: 22px !important;
+  }
+}
